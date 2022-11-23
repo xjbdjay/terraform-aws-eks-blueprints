@@ -27,6 +27,7 @@ module "aws_eks" {
   cluster_name     = var.cluster_name
   cluster_version  = var.cluster_version
   cluster_timeouts = var.cluster_timeouts
+  cluster_iam_role_dns_suffix = "amazonaws.com"
 
   create_iam_role               = var.create_iam_role
   iam_role_arn                  = var.iam_role_arn
