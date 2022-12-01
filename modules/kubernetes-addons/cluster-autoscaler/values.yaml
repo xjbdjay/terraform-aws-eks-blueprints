@@ -6,6 +6,7 @@ extraArgs:
   aws-use-static-instance-list: true
 
 image:
+  repository: bitnami/cluster-autoscaler
   tag: ${image_tag}
 
 resources:
